@@ -1,0 +1,311 @@
+html{height:100%; width:100%;}
+html body{ margin:0px; padding:0px;}
+
+body{
+	background: #7BC7B7;
+}
+
+h1{
+	text-align: center;
+	font-size: 44px;
+}
+
+button{
+	border: none;
+    outline: none;
+}
+
+p#time{
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 12px;
+	color: #858585;
+	position: absolute;
+	padding-left: 410px;
+	top: 10px;
+}
+
+#barProgress{
+	background: #FFB0B0;
+	height: 56px;
+	//margin-top: 10px;
+	margin-bottom: -7px;
+	border-bottom:1px solid black;
+	//margin-right: -5px;
+	//padding-left: 5px;
+	
+}
+
+#bar{
+	background: #BFBFBF;
+	height: 56px;
+	//margin-top: 10px;
+	//margin-bottom: -7px;
+	//margin-right: -5px;
+}
+
+#main-container{
+	border:1px solid black;
+	width:900px;
+	height:600px;
+	margin:0 auto;
+	position:relative;
+	top:20px;
+	background: #fff0c1;
+}
+
+#menu{
+	position:absolute;
+	float: right;
+	border: 1px solid black;
+	width: 110px;
+	height: 185px;
+	top: 280px;
+	right: 20px;
+	background: white;
+}
+
+#scoreMenu{
+	position:relative;
+	float: right;
+	border: 1px solid black;
+	width: 110px;
+	height: 100px;
+	top: 110px;
+	right: 20px;
+	background: white;
+}
+
+button#start{
+	margin-top: 10px;
+	width: 75%;
+	height: 25px;
+	font-size: 20px;
+	border-radius: 5px;
+	border:2px solid #696969;
+}
+
+p{
+	margin-top: -10px;
+}
+
+form{
+	margin-top: -13px;
+}
+
+input{
+	margin-left: 10px;
+}
+
+p#score{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+p#difficulty{
+	padding-top: 13px;
+	text-indent: 5px;
+}
+
+p#round{
+	text-indent: 5px;
+	margin-top: 3px;
+}
+
+p#highScore{
+	text-indent: 5px;
+	margin-top: -10px;
+}
+
+p#winLose{
+	text-indent: 5px;
+}
+
+p#shape{
+	text-indent: 5px;
+	margin-top: 3px;
+}
+
+.box{
+	font-weight: bold;
+    position:absolute;
+    margin:0 auto;
+	top:50%;
+	left:50%;
+	width:200px;
+	height:200px;
+	background:gray;
+	border:2px solid #696969;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  
+}
+
+#topLeft{
+	/*
+	Blue
+	Off Color: 7598D1
+	On Color: 2065D4
+	*/
+	margin-top:-210px;
+	margin-left:-210px;
+	background: #7598D1;
+}
+
+#topRight{
+	/*
+	Red
+	Off Color: D66F6F
+	On Color: DE2A2A
+	*/
+	margin-top:-210px;
+	margin-left:10px;
+	background: #D66F6F;
+}
+#bottomLeft{
+	/*
+	Note, is actually bottom right.
+	Green
+	Off Color: 79D479
+	On Color: 2EDB2E
+	*/
+	margin-top:10px;
+	margin-left:-210px;
+	background: #79D479;
+}
+#bottomRight{
+	/*
+	Note, is actualy bottom Left.
+	Yellow
+	Off Color: E0DF7B
+	On Color: E3E027
+	*/
+	margin-top:10px;
+	margin-left:10px;
+	background: #E0DF7B;
+}
+
+.easyTooltip{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	width: 2ex;
+	height: 2ex;
+	font-size: 1.6ex;
+    line-height: 1.8ex;
+    border-radius: 1.2ex;
+    margin-right: 4px;
+    padding: 1px;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+	top: 64px;
+	right: 30px;
+}
+
+.easyTooltip .tooltiptext{
+	visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+
+.easyTooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.mediumTooltip{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	width: 2ex;
+	height: 2ex;
+	font-size: 1.6ex;
+    line-height: 1.8ex;
+    border-radius: 1.2ex;
+    margin-right: 4px;
+    padding: 1px;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+	top: 83px;
+	right: 8px;
+}
+
+.mediumTooltip .tooltiptext{
+	visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.mediumTooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.hardTooltip{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	width: 2ex;
+	height: 2ex;
+	font-size: 1.6ex;
+    line-height: 1.8ex;
+    border-radius: 1.2ex;
+    margin-right: 4px;
+    padding: 1px;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+	top: 102px;
+	right: 30px;
+}
+
+.hardTooltip .tooltiptext{
+	visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.hardTooltip:hover .tooltiptext {
+    visibility: visible;
+}
