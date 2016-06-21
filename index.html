@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Simon Says This is a test</title>
+	<script type = "text/javascript" src = "Simon.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="Simon.css" />
+	<link rel="shortcut icon" type="image/png" href="SimonIcon.png"/>
+</head>
 
+<body>
+ <h1>Simon Says</h1>
+ <!--<button onclick = "test()">Test</button>-->
+ <!--CHEATER BUTTON
+ <button onclick = "check()">Check</button>
+ -->
+ <div id='main-container'>
+  <div id = "barProgress">
+   <div id = "bar">
+    <p id = "time">Time: 0</p>
+   </div>
+  </div>
+  <div id = "scoreMenu">
+	<p id = "score">Score</p>
+	<p id = "round">Round: 0</p>
+	<p id = "highScore">High Score: 0</p>
+	<p id = "winLose">Lost: No</p>
+  </div>
+  <div id = "menu">
+   <div style = "text-align: center;">
+	<button id = "start" onclick = "start()">Start</button>
+   </div>
+   <!--Possible Time Trial Mode: Given a fixed amount of time how many rounds can you get through-->
+   <!--Plans for dificulty:
+	easy: no timer bar and long computer flash times
+	medium: no timer bar and shorter computer flash times
+	hard: timer bar and shorter computer flash times
+	-->
+   <p id = "difficulty">Difficulty</p>
+   <form>
+	<input type = "radio" name = "difficulty" id = "easy" value = "easy" onclick = "changeDifficulty(this.value)">Easy<div class = "easyTooltip">?<span class = "tooltiptext">Computer is slow and no timer</span></div> </input><br>
+	<input type = "radio" name = "difficulty" id = "medium" value = "medium" onclick = "changeDifficulty(this.value)">Medium<div class = "mediumTooltip">?<span class = "tooltiptext">Computer is fast and no timer</span></div></input><br>
+	<input type = "radio" name = "difficulty" id = "hard" value = "hard" onclick = "changeDifficulty(this.value)">Hard<div class = "hardTooltip">?<span class = "tooltiptext">Computer is fast and a timer</span></div></input>
+   </form>
+	
+	<p id = "shape">Shape</p>
+	<form>
+		<input type = "radio" name = "shape" id = "square" value = "Square" onclick = "changeShape(this.value)">Square</input><br>
+		<input type = "radio" name = "shape" value = "Circle" onclick = "changeShape(this.value)">Circle</input><br>
+	</form>
+  </div>
+	<button class='box' id='topLeft' onMouseDown = "choice = this.id, down()" onMouseUp = "choice = this.id, up()">1</button>
+	<button class='box' id='topRight' onMouseDown = "choice = this.id, down()" onMouseUp = "choice = this.id, up()">2</button>
+	<button class='box' id='bottomLeft' onMouseDown = "choice = this.id, down()" onMouseUp = "choice = this.id, up()">3</button>
+	<button class='box' id='bottomRight' onMouseDown = "choice = this.id, down()" onMouseUp = "choice = this.id, up()">4</button>
+ </div>
+</body>
+</html>
