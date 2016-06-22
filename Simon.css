@@ -55,17 +55,6 @@ p#time{
 	background: #fff0c1;
 }
 
-#menu{
-	position:absolute;
-	float: right;
-	border: 1px solid black;
-	width: 110px;
-	height: 185px;
-	top: 280px;
-	right: 20px;
-	background: white;
-}
-
 #scoreMenu{
 	position:relative;
 	float: right;
@@ -85,7 +74,48 @@ button#start{
 	border-radius: 5px;
 	border:2px solid #696969;
 }
+p#score{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+p#round{
+	text-indent: 5px;
+	margin-top: 3px;
+}
+p#highScore{
+	text-indent: 5px;
+	margin-top: -10px;
+}
+p#winLose{
+	text-indent: 5px;
+}
 
+/*COMPATIBILITY ERRORS*/
+
+
+#menu{
+	position:absolute;
+	float: right;
+	border: 1px solid black;
+	width: 110px;
+	height: 185px;
+	top: 280px;
+	right: 20px;
+	background: white;
+}
+
+p#difficulty{
+	padding-top: 13px;
+	text-indent: 5px;
+}
+
+p#shape{
+	text-indent: 5px;
+	margin-top: 3px;
+}
 p{
 	margin-top: -10px;
 }
@@ -97,37 +127,37 @@ form{
 input{
 	margin-left: 10px;
 }
-
-p#score{
+#games-container{
+	position: relative;
+	float: left;
+	border: 1px solid black;
+	width: 120px;
+	height: 92px;
+	top: 21px;
+	background: white;
+	left: 30px;
+}
+p#games{
+	text-decoration: underline;
 	text-align: center;
 	font-size: 25px;
 	font-weight: bold;
 	margin-bottom: -3px;
 	margin-top: 3px;
 }
-
-p#difficulty{
-	padding-top: 13px;
+p#oddlect{
 	text-indent: 5px;
+	margin-top: 5px;
+	//padding-top: 5px;
+	
+	//border: 1px solid black;
 }
 
-p#round{
+p#soon{
 	text-indent: 5px;
-	margin-top: 3px;
-}
-
-p#highScore{
-	text-indent: 5px;
-	margin-top: -10px;
-}
-
-p#winLose{
-	text-indent: 5px;
-}
-
-p#shape{
-	text-indent: 5px;
-	margin-top: 3px;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	font-style: italic;
 }
 
 .box{
@@ -308,4 +338,24 @@ p#shape{
 
 .hardTooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+a:link{
+	color: blue;
+	text-decoration: none;
+}
+
+a:visited{
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: red;
+}
+
+a:active{
+	text-decoration: underline;
+	color: purple;
 }
